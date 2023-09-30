@@ -17,7 +17,7 @@ namespace UniRx.Examples
         public Slider MySlider;
 
         // SpecializedReactiveProperty를 통해 인스펙터에서 모니터링/수정이 가능하도록 합니다.
-        public IntReactiveProperty IntRxProp = new IntReactiveProperty();
+        public IReactiveProperty<int> IntRxProp = new Intra();
 
         Enemy enemy = new Enemy(1000);
 
